@@ -296,6 +296,8 @@ int CrossPointSettings::getReaderFontId() const {
     case NOTOSERIF:
     default:
       switch (fontSize) {
+        case EXTRA_SMALL:
+          return NOTOSERIF_10_FONT_ID;
         case SMALL:
           return NOTOSERIF_12_FONT_ID;
         case MEDIUM:
@@ -308,6 +310,7 @@ int CrossPointSettings::getReaderFontId() const {
       }
     case NOTOSANS:
       switch (fontSize) {
+        case EXTRA_SMALL:
         case SMALL:
           return NOTOSANS_12_FONT_ID;
         case MEDIUM:
@@ -320,6 +323,7 @@ int CrossPointSettings::getReaderFontId() const {
       }
     case OPENDYSLEXIC:
       switch (fontSize) {
+        case EXTRA_SMALL:
         case SMALL:
           return OPENDYSLEXIC_8_FONT_ID;
         case MEDIUM:
